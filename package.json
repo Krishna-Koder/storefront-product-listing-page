@@ -1,6 +1,7 @@
 {
   "private": true,
-  "name": "@adobe/storefront-product-listing-page",
+  "name": "@repo/storefront-product-listing-page",
+  "main": "./dist/search.js",
   "version": "2.0.0",
   "license": "MIT",
   "typings": "./dist/@types/index.d.ts",

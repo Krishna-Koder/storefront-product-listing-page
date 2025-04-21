@@ -68,6 +68,15 @@ const LiveSearchPLP = ({ storeDetails, root }: MountSearchPlpProps) => {
   );
 };
 
+declare global {
+  interface Window {
+    LiveSearchPLP: typeof LiveSearchPLP
+  }
+}
+
 if (typeof window !== 'undefined' && !window.LiveSearchPLP) {
   window.LiveSearchPLP = LiveSearchPLP;
 }
+
+export default LiveSearchPLP;
+
